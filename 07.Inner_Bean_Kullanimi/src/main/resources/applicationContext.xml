@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="customer" class="com.enesbayram.model.Customer">
+		<constructor-arg name="customerId" value="5"/>
+		<constructor-arg name="firstName" value="Enes"/>
+		<constructor-arg name="lastName" value="Bayram"/>
+		<constructor-arg name="order">
+			<bean id="order" class="com.enesbayram.model.Order">
+				<property name="orderId" value="456"/>
+				<property name="orderName" value="Pizza"/>
+				<property name="price" value="21.90"/>
+			</bean>			
+		</constructor-arg>
+	</bean>
+
+
+</beans>

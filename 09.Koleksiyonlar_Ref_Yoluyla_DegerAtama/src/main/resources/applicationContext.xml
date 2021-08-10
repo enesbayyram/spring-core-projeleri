@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+			
+
+	<bean id="collection" class="com.enesbayram.model.Collections">
+		<property name="studentList">
+			<list>
+				<bean id="student1" class="com.enesbayram.model.Student"
+					 p:studentId="123"
+					 p:firstName="Enes" 
+					 p:lastName="Bayram">
+				</bean>
+				
+					<bean id="student2" class="com.enesbayram.model.Student"
+					 p:studentId="432"
+					 p:firstName="Bilal" 
+					 p:lastName="Çamur">
+				</bean>
+				
+				<bean id="student3" class="com.enesbayram.model.Student"
+					 p:studentId="534"
+					 p:firstName="Yakup" 
+					 p:lastName="Reçber">
+				</bean>
+			</list>
+		</property>
+		
+		<property name="studentSet">
+			<set>
+				<bean id="student1" class="com.enesbayram.model.Student"
+					 p:studentId="123"
+					 p:firstName="Enes" 
+					 p:lastName="Bayram">
+				</bean>
+				
+					<bean id="student2" class="com.enesbayram.model.Student"
+					 p:studentId="432"
+					 p:firstName="Bilal" 
+					 p:lastName="Çamur">
+				</bean>
+				
+				
+				<bean id="student3" class="com.enesbayram.model.Student"
+					 p:studentId="534"
+					 p:firstName="Yakup" 
+					 p:lastName="Reçber">
+				</bean>
+			</set>
+		</property>
+		
+		<property name="studentMap">
+			<map>
+				<entry key="1">
+					<bean id="student1" class="com.enesbayram.model.Student"
+					 p:studentId="123"
+					 p:firstName="Enes" 
+					 p:lastName="Bayram">
+					</bean>
+				</entry>
+				
+				<entry key="2">
+					<bean id="student2" class="com.enesbayram.model.Student"
+					 p:studentId="432"
+					 p:firstName="Bilal" 
+					 p:lastName="Çamur">
+					</bean>
+				</entry>
+				
+				<entry key="3">
+					<bean id="student3" class="com.enesbayram.model.Student"
+						 p:studentId="534"
+						 p:firstName="Yakup" 
+						 p:lastName="Reçber">
+					</bean>
+				</entry>
+			</map>			
+		</property>
+		
+	</bean>
+
+</beans>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student" class="com.enesbayram.model.Student">
+		<property name="studentList">
+			<list>
+				<value>Enes</value>
+				<value>Yasin</value>
+				<value>Taner</value>
+			</list>
+		</property>
+		
+		<property name="studentSet">
+			<set>
+				<value>Enes</value>
+				<value>Yasin</value>
+				<value>Taner</value>
+			</set>
+		</property>
+		
+		<property name="studentMap">
+			<map>
+				<entry key="1" value="Enes"></entry>
+				<entry key="2" value="Yasin"></entry>
+				<entry key="3" value="Taner"></entry>
+			</map>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.16.202103111701-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/main/resources/alis.xml</config>
+		<config>src/main/resources/satis.xml</config>
+		<config>src/main/resources/musteri.xml</config>
+		<config>src/main/resources/adres.xml</config>
+		<config>src/main/resources/yonetim.xml</config>
+		<config>src/main/resources/haklar.xml</config>
+		<config>src/main/resources/hepsininToplami.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

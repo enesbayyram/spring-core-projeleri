@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="okul" class="com.enesbayram.model.Okul"
+		p:kurumAd="Doğuş Üniversitesi" p:kurumId="444">
+	</bean>
+
+
+	<bean id="ogrenci" class="com.enesbayram.model.Ogrenci"
+		p:no="22"
+		p:ad="Enes" 
+		p:soyad="Bayram"
+		p:okul-ref="okul">
+	</bean>
+
+</beans>

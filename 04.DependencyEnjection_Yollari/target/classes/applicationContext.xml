@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="beanA" class="com.enesbayram.model.A" scope="singleton">
+		<property name="mesaj1" value="Güzel Gören, güzel düşünür."/>
+		<property name="mesaj2" value="Güzel düşünen,hayattan lezzet alır..."></property>
+	</bean>
+	
+<!-- 	<bean id="beanB" class="com.enesbayram.model.B"> -->
+<!-- 		<constructor-arg name="a" ref="beanA"></constructor-arg> -->
+<!-- 	</bean> -->
+	
+<!-- 	<bean id="beanC" class="com.enesbayram.model.C"> -->
+<!--  		<constructor-arg name="a" ref="beanA"></constructor-arg>  -->
+<!-- 		<constructor-arg name="b" ref="beanB"></constructor-arg> -->
+<!-- 		<constructor-arg  name="mesaj" value="Enes Bayram" type="java.lang.String"></constructor-arg> -->
+<!-- 		<constructor-arg name="sayi" value="22" type="int"></constructor-arg> -->
+<!-- 	</bean> -->
+	
+</beans>
