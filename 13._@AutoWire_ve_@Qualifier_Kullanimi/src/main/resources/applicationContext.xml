@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<context:annotation-config/> <!-- @Autowire anatasyonunu kullanımını aktif hale getirdik. -->
+	
+	<bean id="ders1" class="com.enesbayram.model.Ders">
+		<property name="ders" value="Fizik"/>
+		<property name="not" value="25"/>
+	</bean>
+	
+	<bean id="ders2" class="com.enesbayram.model.Ders">
+		<property name="ders" value="Coğrafya"/>
+		<property name="not" value="88"/>
+	</bean>
+	
+	
+	<bean id="ders3" class="com.enesbayram.model.Ders">
+		<property name="ders" value="Kimya"/>
+		<property name="not" value="54"/>
+	</bean>
+	
+	
+	<bean id="ders4" class="com.enesbayram.model.Ders">
+		<property name="ders" value="Biyoloji"/>
+		<property name="not" value="66"/>
+	</bean>
+	
+	
+	<bean id="ogrenci" class="com.enesbayram.model.Ogrenci">
+		<property name="isim" value="Enes"/>
+		<property name="soyisim" value="Bayram"/>
+		<property name="yas" value="22"/>
+	</bean>
+
+</beans>

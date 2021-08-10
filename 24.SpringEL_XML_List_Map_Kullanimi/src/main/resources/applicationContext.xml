@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<bean id="kaynakBean" class="com.enesbayram.model.Kaynak"/>
+
+	<bean id="koleksiyon" class="com.enesbayram.model.Koleksiyon">
+		<property name="secilenList" value="#{kaynakBean.list[0]}"></property>
+		<property name="secilenMap" value="#{kaynakBean.map.get(1)}"></property>
+	</bean>
+</beans>

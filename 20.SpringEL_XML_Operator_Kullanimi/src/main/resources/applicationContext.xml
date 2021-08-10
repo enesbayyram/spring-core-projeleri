@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<bean id="sayiBean" class="com.enesbayram.model.Sayi">
+		<property name="sayi1" value="10"/>
+		<property name="sayi2" value="5"/>
+	</bean>
+	
+	<bean id="operatorBean" class="com.enesbayram.model.Operator">
+		<property name="equals" value="#{sayiBean.sayi1 == sayiBean.sayi2}"/>
+		<property name="notEquals" value="#{sayiBean.sayi1 != sayiBean.sayi2}"/>
+		<property name="lessThan" value="#{sayiBean.sayi1 lt sayiBean.sayi2}"/>
+		<property name="greaterThan" value="#{sayiBean.sayi1 > sayiBean.sayi2}"/>
+		<property name="lessOrEquals" value="#{sayiBean.sayi1 le sayiBean.sayi2}"/>
+		<property name="greaterOrEquals" value="#{sayiBean.sayi1 ge sayiBean.sayi2}"/>
+		
+		<property name="and" value="#{sayiBean.sayi1 lt 11 and sayiBean.sayi2 ==5}"/>
+		<property name="or" value="#{sayiBean.sayi1 == 5 or sayiBean.sayi1 >9}"/>
+		<property name="not" value="#{!(sayiBean.sayi1 != sayiBean.sayi2)}"/>
+		
+		<property name="plus" value="#{sayiBean.sayi1 + sayiBean.sayi2}"/>
+		<property name="minus" value="#{sayiBean.sayi1 - sayiBean.sayi2}"/>
+		<property name="multiple" value="#{sayiBean.sayi1 * sayiBean.sayi2}"/>
+		<property name="dividedBy" value="#{sayiBean.sayi1 / sayiBean.sayi2}"/>
+	</bean>
+
+</beans>

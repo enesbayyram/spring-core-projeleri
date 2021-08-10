@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="startEventBean" class="com.enesbayram.event.ContextStartEvent"/>
+	<bean id="refleshEventBean" class="com.enesbayram.event.ContextYenilemeEvent"></bean>
+	
+	<bean id="soz" class="com.enesbayram.model.Soz">
+		<property name="mesaj" value="Güzel gören güzel düşünür,Güzel düşünen hayattan lezzet alır."/>
+	</bean>
+
+	<bean id="stopEventBean" class="com.enesbayram.event.ContextStopEvent"/>
+</beans> 

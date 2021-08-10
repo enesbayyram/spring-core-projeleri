@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<!-- ByName :Class içindeki referans ismi ile , tanımlanan bean'ın id değeri aynı ise birbirlerine otomatik olarak bağlar -->
+	<!-- ByType: Class içindeki referans TİPİ ile , tanımlanan bean'ın tİPİ aynı ise birbirlerine bağlar. -->
+	
+	<bean id="adres" class="com.enesbayram.model.Adres"
+		p:city="İstanbul"
+		p:district="Çekmeköy"
+		p:street="Dilek"
+		p:no="34">
+	</bean>
+	
+	<bean id="calisan" class="com.enesbayram.model.Calisan" autowire="byType">
+		<property name="firstName" value="Enes"/>
+		<property name="lastName" value="Bayram"/>
+	</bean>
+	
+</beans>

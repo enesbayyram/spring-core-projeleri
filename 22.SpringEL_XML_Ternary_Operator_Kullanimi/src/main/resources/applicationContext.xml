@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	
+	<bean id="sayiBean" class="com.enesbayram.model.Sayi">
+		<property name="sayi1" value="10"/>
+		<property name="sayi2" value="5"/>
+	</bean>
+ 
+	<bean id="operatorBean" class="com.enesbayram.model.Operator">
+		<property name="kontrolBoolean" value="#{sayiBean.sayi1 lt sayiBean.sayi2 ? true : false}"/>
+		<property name="kontrolString" value="#{'enes'.equals('enes') ? 'AYNI' : 'FARKLI'}"/>
+	</bean>
+
+</beans>
